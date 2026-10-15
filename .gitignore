@@ -1,0 +1,57 @@
+# CMake build output
+build/
+build-*/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+
+# Local CMake presets (machine-specific; do not commit)
+CMakeUserPresets.json
+
+# Visual Studio / MSVC
+.vs/
+*.vcxproj*
+*.sln
+
+# JetBrains IDEs
+.idea/
+
+# Compiled output
+*.exe
+*.dll
+*.lib
+*.pdb
+*.obj
+*.o
+*.a
+
+# OS files
+.DS_Store
+Thumbs.db
+
+#vcpkg
+vcpkg_installed/
+
+# Keep 3D models (*.obj above is meant for MSVC object files)
+!Models/**/*.obj
+
+# clangd / editor
+.cache/
+compile_commands.json
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# macOS / Xcode
+*.dSYM/
+xcuserdata/
+*.xcodeproj/
+
+# Debug / profiling / logs
+*.log
+*.dmp
+*.ilk
+
+# Generated config header
+ProjectPaths.h

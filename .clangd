@@ -1,0 +1,5 @@
+CompileFlags:
+  CompilationDatabase: build/mac-arm64
+
+InlayHints:
+    Designators: No
