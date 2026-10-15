@@ -19,15 +19,6 @@ A small real-time 3D scene built with C++17 and modern OpenGL (3.3 core) for a C
 | Mouse | Look around |
 | `Esc` | Quit |
 
-## Build & Run
-
-Requires CMake 3.20+, a C++17 compiler and [vcpkg](https://github.com/microsoft/vcpkg) (installed at `$HOME/vcpkg` or pointed to by `VCPKG_ROOT`). Dependencies (GLFW, GLEW, GLM, stb) are installed automatically from `vcpkg.json`.
-
-```sh
-cmake --preset mac-arm64        # or win-msvc-2022 / win-msvc-2026 / mac-intel
-cmake --build build/mac-arm64
-./build/mac-arm64/OpenGLStarter
-```
 
 ## Project Layout
 
