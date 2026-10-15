@@ -15,7 +15,6 @@ uniform sampler2D texture_data;
 void main()
 {
     vec3 norm = normalize(Normal);
-    // single bare bulb: point light that fades with distance
     vec3 lightDir = normalize(lightPos - FragPos);
     vec3 viewDir = normalize(viewPos - FragPos);
     vec3 reflectDir = reflect(-lightDir, norm);
@@ -23,7 +22,6 @@ void main()
     float dist = length(lightPos - FragPos);
     float attenuation = 1.0 / (1.0 + 0.09 * dist + 0.032 * dist * dist);
 
-    // Phong lighting (dark room: weak fill, strong harsh bulb)
     float ambientStrength = 0.25;
     float diffuseStrength = 1.2;
     float specularStrength = 0.3;
